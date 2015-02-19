@@ -1,0 +1,505 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/dvp4c/ontologies/RiC"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/dvp4c/ontologies/RiC"
+     versionIRI="http://www.semanticweb.org/dvp4c/ontologies/RiC/04">
+    <Prefix name="" IRI="http://www.semanticweb.org/dvp4c/ontologies/RiC#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentDescriptionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AgentDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalDescriptionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalRecordSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalRecordSetDescriptionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalRecordSetDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biological"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessDescriptionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConceptualObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorporateBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalObjectDescriptionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalObjectDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalObjectStorageUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GeographicFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationCarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationCarrierMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationMedium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jurisdiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MandateDescriptionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MandateDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MandateExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MandateRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OccurrentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersistentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person-like"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProxyAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordDescriptionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecordStorageUnit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelationDescriptionExpression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelationDescriptionRealization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transaction"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Agent"/>
+        <Class IRI="#PersistentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentDescriptionExpression"/>
+        <Class IRI="#ArchivalDescriptionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AgentDescriptionRealization"/>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalDescriptionExpression"/>
+        <Class IRI="#CulturalObjectDescriptionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+        <Class IRI="#CulturalObjectDescriptionRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalRecordSet"/>
+        <Class IRI="#RecordSet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalRecordSetDescriptionExpression"/>
+        <Class IRI="#ArchivalDescriptionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalRecordSetDescriptionRealization"/>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biological"/>
+        <Class IRI="#NaturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessDescriptionExpression"/>
+        <Class IRI="#ArchivalDescriptionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessDescriptionRealization"/>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConceptualObject"/>
+        <Class IRI="#CulturalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorporateBody"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalObject"/>
+        <Class IRI="#PersistentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalObjectDescriptionExpression"/>
+        <Class IRI="#InformationExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalObjectDescriptionRealization"/>
+        <Class IRI="#InformationRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalObjectStorageUnit"/>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalPhysicalObject"/>
+        <Class IRI="#CulturalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalPhysicalObject"/>
+        <Class IRI="#PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#OccurrentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Family"/>
+        <Class IRI="#Group"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GeographicFeature"/>
+        <Class IRI="#NaturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationCarrier"/>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationCarrierMedium"/>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationCarrierMedium"/>
+        <Class IRI="#InformationCarrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationCarrierMedium"/>
+        <Class IRI="#InformationMedium"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationExpression"/>
+        <Class IRI="#ConceptualObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationMedium"/>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationRealization"/>
+        <Class IRI="#CulturalPhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jurisdiction"/>
+        <Class IRI="#CorporateBody"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MandateDescriptionExpression"/>
+        <Class IRI="#ArchivalDescriptionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MandateDescriptionRealization"/>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MandateExpression"/>
+        <Class IRI="#InformationExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MandateRealization"/>
+        <Class IRI="#InformationRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NaturalPhysicalObject"/>
+        <Class IRI="#PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OccurrentEntity"/>
+        <Class IRI="#RiC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersistentEntity"/>
+        <Class IRI="#RiC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Biological"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person-like"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalObject"/>
+        <Class IRI="#PersistentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProxyAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordDescriptionExpression"/>
+        <Class IRI="#ArchivalDescriptionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordDescriptionExpression"/>
+        <Class IRI="#RecordDescriptionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordDescriptionRealization"/>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordExpression"/>
+        <Class IRI="#InformationExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordRealization"/>
+        <Class IRI="#InformationRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordSet"/>
+        <Class IRI="#Set"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecordStorageUnit"/>
+        <Class IRI="#CulturalObjectStorageUnit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelationDescriptionExpression"/>
+        <Class IRI="#ArchivalDescriptionExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelationDescriptionRealization"/>
+        <Class IRI="#ArchivalDescriptionRealization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Set"/>
+        <Class IRI="#InformationExpression"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transaction"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AgentDescriptionRealization"/>
+        <Class IRI="#ArchivalRecordSetDescriptionRealization"/>
+        <Class IRI="#BusinessDescriptionRealization"/>
+        <Class IRI="#MandateDescriptionRealization"/>
+        <Class IRI="#RecordDescriptionRealization"/>
+        <Class IRI="#RelationDescriptionRealization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CorporateBody"/>
+        <Class IRI="#Family"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ArchivalRecordSet</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Record Set is an intellectual grouping of records based on one or more properties shared by two or more records. Though such a group may be coextensive with a RecordStorageUnit (physically arrangement and storage), this is not essential. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CulturalObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cultural object is a man-made object. Though the term &quot;cultural&quot; is often used as a synonym for &quot;high culture,&quot; for example, the Mona Lisa, or Il Duomo, here it is used in contrast to Natural Object, or Culture versus Nature, the former being all of the objects that are human produced, and the latter as the given environment. (Rousseau was apparently the first to make this distinction). </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CulturalObject</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Cultural Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InformationCarrier</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An Information Carrier as information recorded on it that is not human-readable in its recorded form. Storage alone (e.g., analog recording of sound on wax and plastic; film; computer encoded data (primitively binary, but in combinations of defined sets of bits representing characters, numbers, pixels, sounds, and so on)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InformationCarrier</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Information Carrier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InformationCarrierMedium</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An Information Carrier-Medium has information recorded on it that is directly human-readable, that is, it does not require further mediation to be human-readable. For example, paper for text and photographs. Storage and render in one.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InformationCarrierMedium</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Information Carrier-Medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InformationMedium</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">An Information Medium conveys or renders into human-readable form information that is recorded on an Information Carrier that is human-readiable without mediation. Render alone (e.g., phonograph, microfilm reader, projectors, complex interdependent combinations of computer software (operating systems and functionally specific software dependent on operating sytem environments) and hardware (video devices, input devices, sound and video cards, and so on)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InformationMedium</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Information Medium</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OccurrentEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Occurrent Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PersistentEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This class is more or less the same as CRM &quot;Persistent Item&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PersistentEntity</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Persistent Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Person is distinguished from Person-like in order to make it possible to accurately distinguish between the Person and one or more &quot;Person identities&quot; that may be acquired over a life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">This Agent identity is for a biological person. The identity is the identity the person is given in proximity to the date of birth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person-like</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Person-like is an identity acquired (as opposed to the identity given in proximity to birth). Such identities may be shared by two or more Persons. Futher, the relation of a Person-like agent to a person or persons (or group or groups) may be unknown or tenuous. A Person-like agent may, in fact, be a fictitious or mythical identity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProxyAgent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ProxyAgents are identities created by and that act on behalf of Person or Corporate Body. This class covers software agents, and unmanned vehicles and probes that function autonymously or semi-autonymously. Such agents act and generate records.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RecordStorageUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">A Record Storage Unit is a container for holding records. Note: the intention here is to cover boxes, folders, cabinets, drawers, and so on. It is not intended to cover optical and magnetic storage devices, though this requires more thought. Is a box like a computer folder? In a logical sense, yes. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RecordStorageUnit</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Record Storage Unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RiC</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Records in Context - Scope includes then entire ICA archival description ontology </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RiC</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Record in Context</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
