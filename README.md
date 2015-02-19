@@ -1,4 +1,4 @@
 EGAD-O
 ======
 
-EGAD Ontology
+EGAD Ontology Development Branch
